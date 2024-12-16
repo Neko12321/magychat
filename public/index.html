@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magy Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Login Sayfası -->
+    <div id="login-screen" class="login-screen">
+        <h2>Magy Chat - Giriş</h2>
+        <input type="text" id="username" placeholder="Kullanıcı Adınızı Girin" />
+        <button id="login-btn">Giriş Yap</button>
+    </div>
+
+    <!-- Chat Sayfası (Varsayılan olarak gizli) -->
+    <div id="chat-screen" class="chat-screen">
+        <div id="chat-header">
+            <h2>Magy Chat</h2>
+            <button id="logout-btn">Çıkış</button>
+        </div>
+        <div id="chat-window">
+            <div id="output"></div>
+        </div>
+        <div id="input-container">
+            <input type="text" id="message" placeholder="Mesajınızı yazın..." />
+            <button id="submitBtn">➡️</button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
